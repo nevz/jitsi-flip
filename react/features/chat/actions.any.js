@@ -61,6 +61,7 @@ export function clearMessages() {
  * }}
  */
 export function sendMessage(message: string, ignorePrivacy: boolean = false) {
+    console.log("sending message:" + message)
     return {
         type: SEND_MESSAGE,
         ignorePrivacy,

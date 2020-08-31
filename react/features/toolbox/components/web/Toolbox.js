@@ -76,6 +76,8 @@ import {
 import { isToolboxVisible } from '../../functions';
 import DownloadButton from '../DownloadButton';
 import HangupButton from '../HangupButton';
+import TestButton from '../TestButton';
+
 import HelpButton from '../HelpButton';
 
 import AudioSettingsButton from './AudioSettingsButton';
@@ -1324,6 +1326,8 @@ class Toolbox extends Component<Props, State> {
                         buttonsLeft.indexOf('closedcaptions') !== -1
                             && <ClosedCaptionButton />
                     }
+                                        <TestButton />
+
                 </div>
                 <div className = 'button-group-center'>
                     { this._renderAudioButton() }

@@ -44,7 +44,7 @@ class ChatMessage extends AbstractChatMessage<Props> {
                         <div className = 'messagecontent'>
                             { this.props.showDisplayName && this._renderDisplayName() }
                             <div className = 'usermessage'>
-                                { processedMessage }
+                                { processedMessage}
                             </div>
                             { message.privateMessage && this._renderPrivateNotice() }
                         </div>
